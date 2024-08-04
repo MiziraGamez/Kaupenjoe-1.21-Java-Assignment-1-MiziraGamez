@@ -13,10 +13,6 @@ public class Main {
         String answer3;
         int score = 0;
 
-        boolean answer1correct = true;
-        boolean answer2correct = true;
-        boolean answer3correct = true;
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Question 1:");
         System.out.println("How many different elemental types are in Pokemon? Answer with an integer.");
@@ -25,7 +21,6 @@ public class Main {
             score++;
             System.out.println("Good job! You got the question right!");
         } else {
-            answer1correct = false;
             System.out.println("Oh no... The correct answer was 18.");
         }
         System.out.println("");
@@ -36,7 +31,6 @@ public class Main {
             score++;
             System.out.println("Amazing job! You got the question right!");
         } else {
-            answer2correct = false;
             System.out.println("Oh no... The correct answer was 89.");
         }
         System.out.println("");
@@ -49,7 +43,6 @@ public class Main {
                 System.out.println("Awesome job! You got the question right!");
             }
             case null, default -> {
-                answer3correct = false;
                 System.out.println("Oh no... The statement was actually TRUE/True/true.");
             }
         }
